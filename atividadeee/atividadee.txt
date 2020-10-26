@@ -1,0 +1,37 @@
+EX 2
+package Triangulo_Marcos
+import java.util.Scanner;
+public class Tringulo_Marcos
+{
+public static void main(String[]args)
+{
+Scanner entrada = new Scanner(System.in);
+int A,B,C;
+	entrada = new Scanner(System.in);
+
+   	System.out.print("Digite o lado A=");
+        A = entrada.nextInt(); 
+		
+        System.out.print("Digite o lado B=");
+        B = entrada.nextInt(); 
+		
+	System.out.print("Digite o lado C=");
+        C = entrada.nextInt(); 
+
+
+		if( A+B>C && A+C>B && B+C>A );
+		System.out.print("Os valores formam um triangulo");
+
+		if(A==B && A==C && B==C){ 
+		System.out.print("O triângulo é Eqüilátero.");
+		}
+		else if(A!=B && A!=C && B!=C){
+		System.out.print("O triângulo é Escaleno.");
+		} 
+		else if(A==B && A!=C || A==C && A!=B || B==C && B!=A){
+		System.out.print("O triângulo é Isósceles.");
+		}
+		else
+		System.out.print("Os lados fornecidos não caracterizam um triângulo");
+		}
+
